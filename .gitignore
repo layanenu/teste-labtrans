@@ -1,0 +1,3 @@
+backend/venv
+backend/tmp
+views/frontend/node_modules
