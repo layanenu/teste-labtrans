@@ -10,3 +10,6 @@ class Result(BaseModel):
     trinca = IntegerField()
     placa = IntegerField()
     drenagem = IntegerField()
+
+    class Meta:
+        db_table = 'results'

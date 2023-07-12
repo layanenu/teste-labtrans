@@ -6,3 +6,6 @@ class Video(BaseModel):
     name = CharField()
     km_inicial = DoubleField()
     km_final = DoubleField()
+
+    class Meta:
+        db_table = 'videos'
