@@ -43,6 +43,11 @@ cd backend
 
 Crie um ambiente virtual para isolar as dependências da aplicação (opcional): 
 ```bash
+python3 -m venv venv
+```
+ou 
+
+```bash
 python -m venv venv
 ```
 
@@ -72,7 +77,7 @@ pip install -r requirements.txt
 
 :eight_spoked_asterisk: <strong>Primeira opção</strong>
 
-Em outro terminal, dentro da pasta backend, utilize o seguinte comando para executar o banco de dados existente: 
+Para executar o banco de dados existente utilize o seguinte comando: 
 ```bash
 sqlite3 base.db < init.sql
 ```
@@ -83,6 +88,16 @@ sqlite3 base.db < init.sql
 * Clique em `Open Database`
 * Procure a pasta do repositório clonado e abre o arquivo `base.db`
 * Execute a query existente no arquivo `init.sql` que está contido na pasta `backend`
+
+Execute o Backend:
+```bash
+python3 index.py
+```
+
+ou
+```bash
+python index.py
+```
 
 3️⃣: <strong>FRONTEND</strong>
 
