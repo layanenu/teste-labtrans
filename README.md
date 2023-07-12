@@ -93,9 +93,9 @@ ou
 python index.py
 ```
 
-3️⃣: <strong>FRONTEND</strong>
+3️⃣ <strong>FRONTEND</strong>
 
-Após a conclusão da etapas etapas anteriores, abra um novo terminal e navegue para o diretório backend:
+Após a conclusão das etapas anteriores, abra um novo terminal e navegue para o diretório backend:
 ```bash
 cd backend
 ```
