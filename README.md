@@ -82,7 +82,7 @@ sqlite3 base.db < init.sql
 * Instale o `DB Browser for SQLite`. Você pode baixá-lo em https://sqlitebrowser.org/.
 * Clique em `Open Database`
 * Procure a pasta do repositório clonado e abra o arquivo `base.db`
-* Execute a query existente no arquivo `init.sql` que está contido na pasta `backend`
+* Ainda no `DB Browser for SQLite` execute a query existente no arquivo `init.sql` que está contido na pasta `backend`
 
 Após a configuração do banco execute o Backend:
 ```bash
