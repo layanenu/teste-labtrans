@@ -67,11 +67,15 @@ pip install -r requirements.txt
 
 :eight_spoked_asterisk: <strong>Primeira opção</strong>
 
-Execute o seguinte comando para executar o banco de dados existente: 
+Para executar o banco de dados existente, utilize o seguinte comando:: 
 ```bash
 sqlite3 base.db < init.sql
 ```
 
+:eight_spoked_asterisk: <strong>Segunda opção</strong>
 
-
+* Instale o `DB Browser for SQLite`. Você pode baixá-lo em https://sqlitebrowser.org/.
+* Clique em `Open Database`
+* Procure a pasta do repositório clonado e abre o arquivo `base.db`
+* Execute a query existente no arquivo `init.sql` que está contido na pasta `backend`
 </details>
