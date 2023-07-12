@@ -39,4 +39,24 @@ Entre no diretório do backend:
 cd backend
 ```
 
+Crie um ambiente virtual para isolar as dependências da aplicação (opcional): 
+```bash
+python -m venv venv
+```
+
+Ative o ambiente virtual:
+* macOS/Linux:
+```bash
+source venv/bin/activate
+```
+* Windows:
+```bash
+venv\Scripts\activate
+```
+
+Instale as dependências do projeto: 
+```bash
+pip install -r requirements.txt
+```
+
 </details>
