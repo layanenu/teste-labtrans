@@ -61,13 +61,18 @@ Instale as dependências do projeto:
 pip install -r requirements.txt
 ```
 
+Exec: 
+```bash
+pip install -r requirements.txt
+```
+
 2️⃣ <strong>BANCO DE DADOS</strong>
 
 :warning: Certifique-se de ter o SQLite instalado no seu ambiente. Você pode baixá-lo em https://sqlite.org/download.html.
 
 :eight_spoked_asterisk: <strong>Primeira opção</strong>
 
-Para executar o banco de dados existente, utilize o seguinte comando:: 
+Em outro terminal, dentro da pasta backend, utilize o seguinte comando para executar o banco de dados existente: 
 ```bash
 sqlite3 base.db < init.sql
 ```
@@ -78,4 +83,32 @@ sqlite3 base.db < init.sql
 * Clique em `Open Database`
 * Procure a pasta do repositório clonado e abre o arquivo `base.db`
 * Execute a query existente no arquivo `init.sql` que está contido na pasta `backend`
+
+3️⃣: <strong>FRONTEND</strong>
+
+Após a conclusão da etapa do banco de dados, navegue para o diretório views:
+```bash
+cd views
+```
+
+Entre na pasta frontend
+```bash
+cd frontend
+```
+
+Instale as dependências do projeto:
+```bash
+npm install
+```
+
+Execute a aplicação:
+```bash
+npm run dev
+```
+
+A aplicação pode ser acessada no seu navegador através do link:
+```bash
+http://127.0.0.1:5173/
+```
+
 </details>
