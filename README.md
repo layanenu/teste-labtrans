@@ -41,7 +41,7 @@ Entre no diretório do backend:
 cd backend
 ```
 
-Crie um ambiente virtual para isolar as dependências da aplicação (opcional): 
+Crie um ambiente virtual para isolar as dependências da aplicação: 
 ```bash
 python3 -m venv venv
 ```
