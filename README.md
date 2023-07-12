@@ -34,6 +34,8 @@ Entre no diretório do projeto:
 cd teste-labtrans
 ```
 
+1️⃣ <strong>BACKEND</strong>
+
 Entre no diretório do backend: 
 ```bash
 cd backend
@@ -58,5 +60,18 @@ Instale as dependências do projeto:
 ```bash
 pip install -r requirements.txt
 ```
+
+2️⃣ <strong>BANCO DE DADOS</strong>
+
+:warning: Certifique-se de ter o SQLite instalado no seu ambiente. Você pode baixá-lo em https://sqlite.org/download.html.
+
+:eight_spoked_asterisk: <strong>Primeira opção</strong>
+
+Execute o seguinte comando para executar o banco de dados existente: 
+```bash
+sqlite3 base.db < init.sql
+```
+
+
 
 </details>
