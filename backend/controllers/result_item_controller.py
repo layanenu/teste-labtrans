@@ -12,7 +12,8 @@ class ResultItemController(tornado.web.RequestHandler):
             VwResult.highway, 
             VwResult.km,
             fn.MAX(max_item),
-        ).group_by(VwResult.km).order_by(fn.MAX(max_item).desc()).limit(1).first()
+        ).group_by(
+            VwResult.km).order_by(fn.MAX(max_item).desc()).limit(1).first()
         if result:
             result_dict = {
                 'highway': result.highway,
