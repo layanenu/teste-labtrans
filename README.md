@@ -17,8 +17,6 @@ A aplicação é uma estrutura fullstack projetada para receber e manipular dado
 
 </details>
 
-<strong>:wavy_dash: Layout</strong>
-
 <details>
 <summary><strong> :computer: Rodando na sua máquina</strong></summary><br />
 
@@ -136,3 +134,9 @@ http://127.0.0.1:5173/
 ```
 
 </details>
+
+<strong>:wavy_dash: Layout</strong>
+
+https://github.com/layanenu/teste-labtrans/assets/99842422/037cc59b-e678-4ded-8683-fd102f974480
+
+
