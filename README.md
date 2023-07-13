@@ -38,7 +38,7 @@ Entre no diretório do backend:
 ```bash
 cd backend
 ```
-:eight_spoked_asterisk: <strong>Ambiente virtual com Conda</strong>
+:eight_spoked_asterisk: <strong> Primeira opção: Ambiente virtual com Conda</strong>
 
 :warning: Certifique-se de ter o Anaconda ou o Miniconda instalado em seu sistema. Você pode baixá-los em https://www.anaconda.com/, https://docs.conda.io/en/latest/miniconda.html#installing.
 
@@ -52,7 +52,7 @@ Ative o ambiente virtual:
 conda activate teste_labtrans
 ```
 
-:eight_spoked_asterisk: <strong>Ambiente virtual com venv</strong>
+:eight_spoked_asterisk: <strong>Segunda opção: Ambiente virtual com venv</strong>
 
 :warning: Certifique-se de ter o Python e o PIP (gerenciador de pacotes instalados). 
 
