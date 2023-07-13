@@ -18,7 +18,7 @@ class ResultReportController(tornado.web.RequestHandler):
               )
         if highway_value is not None:
             results = results.where(VwResult.highway == highway_value)
-            results = results.group_by(VwResult.km, VwResult.highway).execute()
+        results = results.group_by(VwResult.km, VwResult.highway).execute()
 
         self.set_header('Content-Type', 'text/csv')
         self.set_header(
