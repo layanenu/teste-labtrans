@@ -60,7 +60,6 @@ python3 -m venv venv
 ```
 ou
 
-Crie um ambiente virtual para isolar as dependências da aplicação: 
 ```bash
 python -m venv venv
 ```
