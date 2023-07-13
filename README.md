@@ -22,7 +22,7 @@ A aplicação é uma estrutura fullstack projetada para receber e manipular dado
 <details>
 <summary><strong> :computer: Rodando na sua máquina</strong></summary><br />
 
-:warning: Certifique-se de ter o Python e o PIP (gerenciador de pacotes) instalados no seu computador. No meu ambiente utilizei o Python3.
+:warning: Certifique-se de ter o Anaconda instalado em seu sistema. Você pode baixá-lo em https://www.anaconda.com/.
 
 Clone o repositório:
 ```bash
@@ -43,32 +43,15 @@ cd backend
 
 Crie um ambiente virtual para isolar as dependências da aplicação: 
 ```bash
-python3 -m venv venv
-```
-ou 
-
-```bash
-python -m venv venv
+conda env create -f environment.yml
 ```
 
 Ative o ambiente virtual:
-* macOS/Linux:
 ```bash
-source venv/bin/activate
-```
-* Windows:
-```bash
-venv\Scripts\activate
-```
-
-Instale as dependências do projeto: 
-```bash
-pip install -r requirements.txt
+conda activate teste_labtrans
 ```
 
 2️⃣ <strong>BANCO DE DADOS</strong>
-
-:warning: Certifique-se de ter o SQLite instalado no seu ambiente. Você pode baixá-lo em https://sqlite.org/download.html.
 
 :eight_spoked_asterisk: <strong>Primeira opção</strong>
 
