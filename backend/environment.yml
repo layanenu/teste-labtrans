@@ -1,0 +1,28 @@
+name: teste_labtrans
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - aiosqlite=0.18.0=py311hca03da5_0
+  - bzip2=1.0.8=h620ffc9_4
+  - ca-certificates=2023.5.7=hf0a4a13_0
+  - libexpat=2.5.0=hb7217d7_1
+  - libffi=3.4.4=hca03da5_0
+  - libsqlite=3.42.0=hb31c410_0
+  - libzlib=1.2.13=h53f4e23_5
+  - ncurses=6.4=h313beb8_0
+  - openssl=3.1.1=h53f4e23_1
+  - peewee=3.16.2=py311ha71a1c3_0
+  - pip=23.1.2=py311hca03da5_0
+  - python=3.11.4=h47c9636_0_cpython
+  - python_abi=3.11=3_cp311
+  - readline=8.2=h1a28f6b_0
+  - setuptools=67.8.0=py311hca03da5_0
+  - sqlite=3.41.2=h80987f9_0
+  - tk=8.6.12=hb8d0fd4_0
+  - tornado=6.3.2=py311heffc1b2_0
+  - tzdata=2023c=h04d1e81_0
+  - wheel=0.38.4=py311hca03da5_0
+  - xz=5.4.2=h80987f9_0
+  - zlib=1.2.13=h53f4e23_5
+prefix: /Users/layane/anaconda3/envs/teste_labtrans
