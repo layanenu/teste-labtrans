@@ -22,8 +22,6 @@ A aplicação é uma estrutura fullstack projetada para receber e manipular dado
 <details>
 <summary><strong> :computer: Rodando na sua máquina</strong></summary><br />
 
-:warning: Certifique-se de ter o Anaconda instalado em seu sistema. Você pode baixá-lo em https://www.anaconda.com/.
-
 Clone o repositório:
 ```bash
 git clone https://github.com/layanenu/teste-labtrans.git
@@ -40,6 +38,9 @@ Entre no diretório do backend:
 ```bash
 cd backend
 ```
+:eight_spoked_asterisk: <strong>Ambiente virtual com Conda</strong>
+
+:warning: Certifique-se de ter o Anaconda ou o Miniconda instalado em seu sistema. Você pode baixá-los em https://www.anaconda.com/, https://docs.conda.io/en/latest/miniconda.html#installing.
 
 Crie um ambiente virtual para isolar as dependências da aplicação: 
 ```bash
@@ -49,6 +50,32 @@ conda env create -f environment.yml
 Ative o ambiente virtual:
 ```bash
 conda activate teste_labtrans
+```
+
+:eight_spoked_asterisk: <strong>Ambiente virtual com venv</strong>
+
+:warning: Certifique-se de ter o Python e o PIP (gerenciador de pacotes instalados). 
+
+Crie um ambiente virtual para isolar as dependências da aplicação: 
+```bash
+python -m venv venv
+```
+
+Ative o ambiente virtual:
+
+* macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+* Windows:
+```bash
+venv\Scripts\activate
+```
+
+Instale as dependências do projeto
+```bash
+pip install -r requirements.txt
 ```
 
 2️⃣ <strong>BANCO DE DADOS</strong>
