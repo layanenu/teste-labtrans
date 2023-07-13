@@ -3,7 +3,6 @@ import tornado.web
 from controllers.result_controller import UploadHandler
 from controllers.result_report_controller import ResultReportController
 from controllers.result_item_controller import ResultItemController
-from models.result import Result
 
 
 if __name__ == "__main__":    
