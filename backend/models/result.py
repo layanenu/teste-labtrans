@@ -1,15 +1,13 @@
-from peewee import IntegerField, DoubleField
+from peewee import IntegerField, DoubleField, TextField
 from models.model import BaseModel
 
 
 class Result(BaseModel):
-    highway = IntegerField()
+    name = TextField()
     km = DoubleField()
-    buraco = IntegerField()
-    remendo = IntegerField()
-    trinca = IntegerField()
-    placa = IntegerField()
-    drenagem = IntegerField()
+    distance = DoubleField()
+    highway = IntegerField()
+    item = TextField()
 
     class Meta:
         db_table = 'results'

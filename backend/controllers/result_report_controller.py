@@ -7,27 +7,19 @@ from peewee import fn
 class ResultReportController(tornado.web.RequestHandler):
     def get(self):
         highway_value = self.get_argument('highway', default=None)
-        results = None
+        results = VwResult.select(
+              VwResult.highway, 
+              VwResult.km,
+              fn.Sum(VwResult.buraco).alias('buraco'),
+              fn.Sum(VwResult.remendo).alias('remendo'),
+              fn.Sum(VwResult.trinca).alias('trinca'),
+              fn.Sum(VwResult.placa).alias('placa'),
+              fn.Sum(VwResult.drenagem).alias('drenagem'),
+              )
         if highway_value is not None:
-          results = VwResult.select(
-              VwResult.highway, 
-              VwResult.km,
-              fn.Sum(VwResult.buraco).alias('buraco'),
-              fn.Sum(VwResult.remendo).alias('remendo'),
-              fn.Sum(VwResult.trinca).alias('trinca'),
-              fn.Sum(VwResult.placa).alias('placa'),
-              fn.Sum(VwResult.drenagem).alias('drenagem'),
-              ).where(VwResult.highway == highway_value).group_by(VwResult.km, VwResult.highway).execute()
-        else:
-           results = VwResult.select(
-              VwResult.highway, 
-              VwResult.km,
-              fn.Sum(VwResult.buraco).alias('buraco'),
-              fn.Sum(VwResult.remendo).alias('remendo'),
-              fn.Sum(VwResult.trinca).alias('trinca'),
-              fn.Sum(VwResult.placa).alias('placa'),
-              fn.Sum(VwResult.drenagem).alias('drenagem'),
-              ).group_by(VwResult.km, VwResult.highway).execute()
+          results = results.where(VwResult.highway == highway_value)
+        
+        results = results.group_by(VwResult.km, VwResult.highway).execute()
 
         self.set_header('Content-Type', 'text/csv')
         self.set_header(

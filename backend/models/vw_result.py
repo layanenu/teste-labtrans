@@ -12,4 +12,4 @@ class VwResult(BaseModel):
     drenagem = IntegerField()
 
     class Meta:
-        db_table = 'vwResult'
+        db_table = 'vw_results'

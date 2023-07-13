@@ -6,9 +6,12 @@
         <input id="file-upload" type="file" accept=".csv" name="arquivo" @change="onFileSelected">
       </label>
       <button class="button-upload" @click="onUpload">Upload</button>
+
     </div>
 
     <div class="container-links">
+      <p v-if="uploadSuccess" class="success-message">Criado com sucesso!</p>
+      <p v-if="uploadError" class="error-message">Erro ao fazer o upload: {{ uploadError }}</p>
       <router-link to="/download">
         <button class="go-download">Ir para a página de download</button>
       </router-link>
@@ -29,6 +32,8 @@ export default {
   data() {
     return {
       selectedFile: null,
+      uploadSuccess: false,
+      uploadError: null,
     };
   },
   methods: {
@@ -37,12 +42,24 @@ export default {
       this.selectedFile = file;
     },
     onUpload() {
-      const fd = new FormData();
-      fd.append('file', this.selectedFile, this.selectedFile.name);
-      axios.post('http://localhost:8882/result', fd)
-        .then((res) => {
-          console.log(res);
-        });
+      if (this.selectedFile) {
+        const fd = new FormData();
+        fd.append('file', this.selectedFile, this.selectedFile.name);
+        axios.post('http://localhost:8882/result', fd)
+          .then((res) => {
+            console.log(res);
+            this.uploadSuccess = true;
+            this.selectedFile = null;
+            const fileInput = document.getElementById('file-upload');
+            fileInput.value = '';
+          }).catch((error) => {
+            this.uploadError = error.message;
+            this.selectedFile = null;
+            const fileInput = document.getElementById('file-upload');
+            fileInput.value = '';
+            // Define a mensagem de erro
+          });
+      }
     },
   },
 };
@@ -57,6 +74,22 @@ export default {
     height: 200px;
   }
 
+  .error-message{
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    display: block;
+    width: 70%;
+    padding-left: 30px;
+  }
+  .success-message{
+    margin-top: 20px;
+    color: #759E0A;
+    font-weight: bold;
+    display: block;
+    width: 70%;
+    padding-left: 30px;
+  }
   .button-upload {
     margin: 0 10px;
     width: 150px;
